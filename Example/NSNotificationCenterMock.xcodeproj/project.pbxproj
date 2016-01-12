@@ -8,16 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		0D1B9010ABF1288E645865A9 /* Pods_NSNotificationCenterMock_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563D93A9AA93AEBAB23981D1 /* Pods_NSNotificationCenterMock_Tests.framework */; };
+		4D9859521C4539E7002D96BF /* NSNotificationCenterMock_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9859511C4539E7002D96BF /* NSNotificationCenterMock_ExampleTests.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		8A03FDC36D00511CDAE82A50 /* Pods_NSNotificationCenterMock_ExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26191B46AEE66BC6E36F99FF /* Pods_NSNotificationCenterMock_ExampleTests.framework */; };
 		DB576FF2B62307D95EC72BFD /* Pods_NSNotificationCenterMock_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93883BA9D6525E8E43E5892D /* Pods_NSNotificationCenterMock_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4D9859541C4539E7002D96BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
+			remoteInfo = NSNotificationCenterMock_Example;
+		};
 		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
@@ -30,7 +38,12 @@
 /* Begin PBXFileReference section */
 		0E149174259CD8D991308661 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		24E69EA467D82EE04DD109DA /* Pods-NSNotificationCenterMock_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSNotificationCenterMock_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NSNotificationCenterMock_Tests/Pods-NSNotificationCenterMock_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		26191B46AEE66BC6E36F99FF /* Pods_NSNotificationCenterMock_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NSNotificationCenterMock_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26C75A64364FF10BC7BFD727 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		49D22CFB4FF58368BF0617BB /* Pods-NSNotificationCenterMock_ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSNotificationCenterMock_ExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NSNotificationCenterMock_ExampleTests/Pods-NSNotificationCenterMock_ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		4D98594F1C4539E7002D96BF /* NSNotificationCenterMock_ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSNotificationCenterMock_ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D9859511C4539E7002D96BF /* NSNotificationCenterMock_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationCenterMock_ExampleTests.swift; sourceTree = "<group>"; };
+		4D9859531C4539E7002D96BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		563D93A9AA93AEBAB23981D1 /* Pods_NSNotificationCenterMock_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NSNotificationCenterMock_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* NSNotificationCenterMock_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSNotificationCenterMock_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -39,17 +52,25 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = NSNotificationCenterMock_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACE51AFB9204008FA782 /* NSNotificationCenterMock_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSNotificationCenterMock_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		87BB606B29EDB919419E55B2 /* Pods-NSNotificationCenterMock_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSNotificationCenterMock_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NSNotificationCenterMock_Tests/Pods-NSNotificationCenterMock_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		93883BA9D6525E8E43E5892D /* Pods_NSNotificationCenterMock_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NSNotificationCenterMock_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4C602236ADF8642E6FFC13 /* NSNotificationCenterMock.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NSNotificationCenterMock.podspec; path = ../NSNotificationCenterMock.podspec; sourceTree = "<group>"; };
 		AEB25D13998CF36559BB2640 /* Pods-NSNotificationCenterMock_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSNotificationCenterMock_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-NSNotificationCenterMock_Example/Pods-NSNotificationCenterMock_Example.release.xcconfig"; sourceTree = "<group>"; };
+		BF82C5B9473061732457CB0F /* Pods-NSNotificationCenterMock_ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSNotificationCenterMock_ExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NSNotificationCenterMock_ExampleTests/Pods-NSNotificationCenterMock_ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB817567274B61CDADCD11F8 /* Pods-NSNotificationCenterMock_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSNotificationCenterMock_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NSNotificationCenterMock_Example/Pods-NSNotificationCenterMock_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4D98594C1C4539E7002D96BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A03FDC36D00511CDAE82A50 /* Pods_NSNotificationCenterMock_ExampleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCD1AFB9204008FA782 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -76,8 +97,19 @@
 				AEB25D13998CF36559BB2640 /* Pods-NSNotificationCenterMock_Example.release.xcconfig */,
 				24E69EA467D82EE04DD109DA /* Pods-NSNotificationCenterMock_Tests.debug.xcconfig */,
 				87BB606B29EDB919419E55B2 /* Pods-NSNotificationCenterMock_Tests.release.xcconfig */,
+				BF82C5B9473061732457CB0F /* Pods-NSNotificationCenterMock_ExampleTests.debug.xcconfig */,
+				49D22CFB4FF58368BF0617BB /* Pods-NSNotificationCenterMock_ExampleTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		4D9859501C4539E7002D96BF /* NSNotificationCenterMock_ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				4D9859511C4539E7002D96BF /* NSNotificationCenterMock_ExampleTests.swift */,
+				4D9859531C4539E7002D96BF /* Info.plist */,
+			);
+			path = NSNotificationCenterMock_ExampleTests;
 			sourceTree = "<group>";
 		};
 		607FACC71AFB9204008FA782 = {
@@ -86,6 +118,7 @@
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for NSNotificationCenterMock */,
 				607FACE81AFB9204008FA782 /* Tests */,
+				4D9859501C4539E7002D96BF /* NSNotificationCenterMock_ExampleTests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				1BABC344DB8A1737B13BF9C6 /* Pods */,
 				EF25796B11EAD063F3790974 /* Frameworks */,
@@ -96,7 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				607FACD01AFB9204008FA782 /* NSNotificationCenterMock_Example.app */,
-				607FACE51AFB9204008FA782 /* Tests.xctest */,
+				607FACE51AFB9204008FA782 /* NSNotificationCenterMock_Tests.xctest */,
+				4D98594F1C4539E7002D96BF /* NSNotificationCenterMock_ExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,7 +160,6 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -155,6 +188,7 @@
 			children = (
 				93883BA9D6525E8E43E5892D /* Pods_NSNotificationCenterMock_Example.framework */,
 				563D93A9AA93AEBAB23981D1 /* Pods_NSNotificationCenterMock_Tests.framework */,
+				26191B46AEE66BC6E36F99FF /* Pods_NSNotificationCenterMock_ExampleTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -162,6 +196,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4D98594E1C4539E7002D96BF /* NSNotificationCenterMock_ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D9859561C4539E7002D96BF /* Build configuration list for PBXNativeTarget "NSNotificationCenterMock_ExampleTests" */;
+			buildPhases = (
+				262FC8A72D7A84984070FEAE /* Check Pods Manifest.lock */,
+				4D98594B1C4539E7002D96BF /* Sources */,
+				4D98594C1C4539E7002D96BF /* Frameworks */,
+				4D98594D1C4539E7002D96BF /* Resources */,
+				F73E846999D411C0D83D30DD /* Embed Pods Frameworks */,
+				7D366492C0EBC1483FB1E5F3 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D9859551C4539E7002D96BF /* PBXTargetDependency */,
+			);
+			name = NSNotificationCenterMock_ExampleTests;
+			productName = NSNotificationCenterMock_ExampleTests;
+			productReference = 4D98594F1C4539E7002D96BF /* NSNotificationCenterMock_ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		607FACCF1AFB9204008FA782 /* NSNotificationCenterMock_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "NSNotificationCenterMock_Example" */;
@@ -200,7 +255,7 @@
 			);
 			name = NSNotificationCenterMock_Tests;
 			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* Tests.xctest */;
+			productReference = 607FACE51AFB9204008FA782 /* NSNotificationCenterMock_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -209,9 +264,14 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
+					4D98594E1C4539E7002D96BF = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 607FACCF1AFB9204008FA782;
+					};
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
@@ -236,11 +296,19 @@
 			targets = (
 				607FACCF1AFB9204008FA782 /* NSNotificationCenterMock_Example */,
 				607FACE41AFB9204008FA782 /* NSNotificationCenterMock_Tests */,
+				4D98594E1C4539E7002D96BF /* NSNotificationCenterMock_ExampleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4D98594D1C4539E7002D96BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCE1AFB9204008FA782 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -291,6 +359,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NSNotificationCenterMock_Example/Pods-NSNotificationCenterMock_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		262FC8A72D7A84984070FEAE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		2AEBFF67FC8FBDD018C7808E /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -336,6 +419,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NSNotificationCenterMock_Tests/Pods-NSNotificationCenterMock_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7D366492C0EBC1483FB1E5F3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NSNotificationCenterMock_ExampleTests/Pods-NSNotificationCenterMock_ExampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B587779575B5AE56E4CCD981 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -351,9 +449,32 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NSNotificationCenterMock_Example/Pods-NSNotificationCenterMock_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F73E846999D411C0D83D30DD /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NSNotificationCenterMock_ExampleTests/Pods-NSNotificationCenterMock_ExampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4D98594B1C4539E7002D96BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D9859521C4539E7002D96BF /* NSNotificationCenterMock_ExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCC1AFB9204008FA782 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -367,13 +488,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4D9859551C4539E7002D96BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 607FACCF1AFB9204008FA782 /* NSNotificationCenterMock_Example */;
+			targetProxy = 4D9859541C4539E7002D96BF /* PBXContainerItemProxy */;
+		};
 		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 607FACCF1AFB9204008FA782 /* NSNotificationCenterMock_Example */;
@@ -401,6 +526,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4D9859571C4539E7002D96BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF82C5B9473061732457CB0F /* Pods-NSNotificationCenterMock_ExampleTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = NSNotificationCenterMock_ExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.attheodo.NSNotificationCenterMock-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NSNotificationCenterMock_Example.app/NSNotificationCenterMock_Example";
+			};
+			name = Debug;
+		};
+		4D9859581C4539E7002D96BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49D22CFB4FF58368BF0617BB /* Pods-NSNotificationCenterMock_ExampleTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NSNotificationCenterMock_ExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.attheodo.NSNotificationCenterMock-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NSNotificationCenterMock_Example.app/NSNotificationCenterMock_Example";
+			};
+			name = Release;
+		};
 		607FACED1AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -422,6 +577,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -490,6 +646,7 @@
 				INFOPLIST_FILE = NSNotificationCenterMock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -502,6 +659,7 @@
 				INFOPLIST_FILE = NSNotificationCenterMock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -521,6 +679,7 @@
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NSNotificationCenterMock_Example.app/NSNotificationCenterMock_Example";
 			};
@@ -537,6 +696,7 @@
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NSNotificationCenterMock_Example.app/NSNotificationCenterMock_Example";
 			};
@@ -545,6 +705,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4D9859561C4539E7002D96BF /* Build configuration list for PBXNativeTarget "NSNotificationCenterMock_ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D9859571C4539E7002D96BF /* Debug */,
+				4D9859581C4539E7002D96BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "NSNotificationCenterMock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
