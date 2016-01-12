@@ -1,0 +1,17 @@
+PODS:
+  - Nimble (3.0.0)
+  - NSNotificationCenterMock (0.1.0)
+
+DEPENDENCIES:
+  - Nimble
+  - NSNotificationCenterMock (from `../`)
+
+EXTERNAL SOURCES:
+  NSNotificationCenterMock:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
+  NSNotificationCenterMock: e80abfe20fa57cab3a86c8830db8cbb58992684e
+
+COCOAPODS: 0.39.0

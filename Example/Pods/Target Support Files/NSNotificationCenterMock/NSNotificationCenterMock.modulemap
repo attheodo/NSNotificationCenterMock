@@ -1,0 +1,6 @@
+framework module NSNotificationCenterMock {
+  umbrella header "NSNotificationCenterMock-umbrella.h"
+
+  export *
+  module * { export * }
+}

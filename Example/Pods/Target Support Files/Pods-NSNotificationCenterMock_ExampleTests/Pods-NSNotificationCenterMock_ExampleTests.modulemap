@@ -1,0 +1,6 @@
+framework module Pods_NSNotificationCenterMock_ExampleTests {
+  umbrella header "Pods-NSNotificationCenterMock_ExampleTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
