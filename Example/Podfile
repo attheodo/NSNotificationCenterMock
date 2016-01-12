@@ -5,6 +5,11 @@ target 'NSNotificationCenterMock_Example', :exclusive => true do
   pod "NSNotificationCenterMock", :path => "../"
 end
 
+target 'NSNotificationCenterMock_ExampleTests', :exclusive => true do
+    pod "Nimble"
+    pod "NSNotificationCenterMock", :path => "../"
+end
+
 target 'NSNotificationCenterMock_Tests', :exclusive => true do
   pod "NSNotificationCenterMock", :path => "../"
 
