@@ -13,7 +13,7 @@ Then, navigate to `NSNotificationCenterMock_ExampleTests/NSNotificationCenterMoc
 ## Installation
 
 NSNotificationCenterMock is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile for your testing targer
+it, simply add the following line to your Podfile for your testing target:
 
 ```ruby
 target 'YourAppTests' do
