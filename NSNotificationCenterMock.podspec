@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
   s.name             = "NSNotificationCenterMock"
-  s.version          = "0.1.0"
+  s.version          = "0.2.0"
   s.summary          = "A simple mock for NSNotificationCenter for easily testing NSNotificationCenter related tasks."
 
   s.description      = <<-DESC
                         NSNotificationCenter is a class used for mocking NSNotificationCenter. You can use this class to test
                         NSNotification logic in your project such as whether certain NSNotifications were posted, registration/unregistration
-                        to/from observers and more.
+                        to/from observers and more. Compatible with Swift 4.x
                        DESC
 
   s.homepage         = "https://github.com/attheodo/NSNotificationCenterMock"
