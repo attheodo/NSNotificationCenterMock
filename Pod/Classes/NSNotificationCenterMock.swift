@@ -8,9 +8,11 @@
 
 import Foundation
 
+typealias NotificationName = Notification.Name
+
 struct NotificationItem: Equatable, Hashable {
     
-    var name: String
+    var name: NotificationName
     var selector: String
     
     var hashValue: Int {
@@ -24,78 +26,58 @@ func ==(lhs: NotificationItem, rhs: NotificationItem) -> Bool {
     return lhs.hashValue == rhs.hashValue
 }
 
-public class NSNotificationCenterMock: NSNotificationCenter {
+public class NSNotificationCenterMock: NotificationCenter {
     
     /// Array holding all registered notification names along with their selectors
     private var registeredObservers:[NotificationItem] = []
     
     /// Array holding posted notifications along with how many times they were posted
-    var postedNotifications:[String] = []
+    var postedNotifications:[NotificationName] = []
     
     // MARK: - Method Overrides
-    override public func addObserver(observer: AnyObject, selector aSelector: Selector, name aName: String?, object anObject: AnyObject?) {
-        
+    public override func addObserver(_ observer: Any, selector aSelector: Selector, name aName: NSNotification.Name?, object anObject: Any?) {
         if let aName = aName {
             registeredObservers.append(NotificationItem(name: aName, selector: aSelector.description))
         }
         
         super.addObserver(observer, selector: aSelector, name: aName, object: anObject)
-    
     }
     
-    override public func removeObserver(observer: AnyObject, name aName: String?, object anObject: AnyObject?) {
-        
+    public override func removeObserver(_ observer: Any, name aName: NSNotification.Name?, object anObject: Any?) {
         if let aName = aName {
-            
-            for (i, notification) in registeredObservers.enumerate() {
-                if notification.name == aName {
-                    registeredObservers.removeAtIndex(i)
-                }
-            }
+            registeredObservers = registeredObservers.filter { $0.name != aName}
         }
         
         super.removeObserver(observer, name: aName, object: anObject)
-    
     }
     
-    override public func postNotificationName(aName: String, object anObject: AnyObject?) {
+    public override func post(name aName: NSNotification.Name, object anObject: Any?) {
         postedNotifications.append(aName)
-        super.postNotificationName(aName, object: anObject)
+        super.post(name: aName, object: anObject)
     }
     
-    override public func postNotificationName(aName: String, object anObject: AnyObject?, userInfo aUserInfo: [NSObject : AnyObject]?) {
+    public override func post(name aName: NSNotification.Name, object anObject: Any?, userInfo aUserInfo: [AnyHashable : Any]? = nil) {
         postedNotifications.append(aName)
-        super.postNotificationName(aName, object: anObject, userInfo: aUserInfo)
+        super.post(name: aName, object: anObject, userInfo: aUserInfo)
     }
     
     // MARK: - NSNotificationCenterMock API
-    public func hasRegisteredNotificationName(name: String, withSelector selector: String) -> Bool {
+    public func hasRegisteredNotificationName(name: Notification.Name, withSelector selector: String) -> Bool {
         
         let notification = NotificationItem(name: name, selector: selector)
         
-        if registeredObservers.contains(notification) {
-            return true
-        } else {
-            return false
-        }
-    
+        return registeredObservers.contains(notification)
     }
     
-    public func hasNotificationBeenPosted(notificationName name: String) -> Bool {
-       
-        if postedNotifications.contains(name) {
-            return true
-        } else {
-            return false
-        }
-    
+    public func hasNotificationBeenPosted(notificationName name: Notification.Name) -> Bool {
+        return postedNotifications.contains(name)
     }
     
-    public func timesNotificationPosted(notificationName name: String) -> Int {
+    public func timesNotificationPosted(notificationName name: Notification.Name) -> Int {
         
         let tmp = postedNotifications.filter({ $0 == name })
         return tmp.count
-    
+        
     }
     
     public func registeredNotifications() -> Int {
